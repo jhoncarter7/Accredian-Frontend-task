@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-
+import React from 'react'
 const ReferNowModal = ({setIsModalOpen, isModalOpen}) => {
 //   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({

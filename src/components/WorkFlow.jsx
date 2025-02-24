@@ -1,5 +1,5 @@
-import  { useState } from "react";
-import PrimaryButton from './PrimaryButton';
+import React, { useState } from "react";
+import PrimaryButton from "./PrimaryButton";
 import ReferNowModal from "./ReferNowModel";
 
 const WorkFlow = () => {
