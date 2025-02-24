@@ -1,5 +1,5 @@
 
-import PrimaryButton from './primaryButton';
+import PrimaryButton from './PrimaryButton';
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 const NavigationBar = () => {
