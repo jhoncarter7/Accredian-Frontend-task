@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const ReferNowModal = ({setIsModalOpen, isModalOpen}) => {
 //   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -112,30 +113,30 @@ const ReferNowModal = ({setIsModalOpen, isModalOpen}) => {
 
                
                   <div className="pt-2">
-                    <h4 className="text-lg font-medium text-gray-800 mb-3">Friend's Information</h4>
+                    <h4 className="text-lg font-medium text-gray-800 mb-3">Friend&apos;s Information</h4>
                     
                     <div className="mb-4">
-                      <label className="block text-sm font-medium text-gray-700 mb-1">Friend's Name*</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Friend&apos;s Name*</label>
                       <input
                         type="text"
                         name="recipientName"
                         value={formData.recipientName}
                         onChange={handleChange}
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200"
-                        placeholder="Enter friend's name"
+                        placeholder="Enter friend&apos;s name"
                         required
                       />
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">Friend's Email*</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Friend&apos;s Email*</label>
                       <input
                         type="email"
                         name="recipientEmail"
                         value={formData.recipientEmail}
                         onChange={handleChange}
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200"
-                        placeholder="Enter friend's email"
+                        placeholder="Enter friend&apos;s email"
                         required
                       />
                     </div>
@@ -189,6 +190,11 @@ const ReferNowModal = ({setIsModalOpen, isModalOpen}) => {
       )}
     </div>
   );
+};
+
+ReferNowModal.propTypes = {
+  setIsModalOpen: PropTypes.func.isRequired,
+  isModalOpen: PropTypes.bool.isRequired
 };
 
 export default ReferNowModal;

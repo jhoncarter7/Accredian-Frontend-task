@@ -1,4 +1,4 @@
-import React from 'react'
+
 const Banner = () => {
     return (
       <div className="container mx-auto pt-4 ">

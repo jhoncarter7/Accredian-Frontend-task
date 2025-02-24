@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import PrimaryButton from "./primaryButton";
 import ReferNowModal from "./ReferNowModel";
 
